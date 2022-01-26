@@ -1,0 +1,8 @@
+.box {
+    background: #ccc;
+    max-width:500px ;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}

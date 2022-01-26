@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+div a {
+    text-decoration: none;
+    color:#666;
+    background-color: beige;
+    padding: 40px;
+    display: block;
+    text-align: center;
+    transition: all 0.2s;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+div a:hover {
+    color:#000;
+    background-color: aquamarine;
+}
+
+div {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.animazione {
+    animation: animazione 2s;
+}
+
+@keyframes animazione {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(300px);}
+    100% {transform: translateY(0);}
+}

@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stile.css">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
 </head>
 
 <body>
@@ -192,14 +194,12 @@
                     <p>La mattina thailandese inizia con pesce speziato, carne piccante di maiale, focaccine alla frutta e ovviamente riso pilaf, una colazione abbondante e dalle interessanti sfumature a contrasto – per essere pronti a godersi il mare turchese di piccoli angoli di paradiso come il Resort Phuket. </p>
                 </div>
                 <figure>
-                    <img src="https://blog.clubmed.it/wp-content/uploads/2016/01/colazione-nel-mondo-thailandia.jpg"
-                        alt="">
+                    <a href="immagini/colazione-nel-mondo-thailandia.jpg" data-fancybox="gallery"><img src="immagini/colazione-nel-mondo-thailandia.jpg" alt="" loading="lazy"></a>
                 </figure>
             </article>
             <article class="reverse">
                 <figure>
-                    <img src="https://blog.clubmed.it/wp-content/uploads/2016/01/colazione-nel-mondo-messico.jpg"
-                        alt="">
+                    <a href="immagini/colazione-nel-mondo-messico.jpg" data-fancybox="gallery"><img src="immagini/colazione-nel-mondo-messico.jpg" alt=""></a>
                 </figure>
                 <div class="testo">
                     <h3>Colazione tipica messicana</h3>
@@ -213,13 +213,17 @@
                     <p>Least but not last: English Breakfast. Doverosa una tazza di tè, i più tradizionalisti si concederanno anche un black pudding, al sangue e cereali. Ma la consueta colazione British si fa con fagioli al pomodoro, fettine di bacon, salsicce, pane tostato e uova – strapazzate, in camicia, all’occhio di bue o semplicemente sode </p>
                 </div>
                 <figure>
-                    <img src="https://blog.clubmed.it/wp-content/uploads/2016/01/colazione-nel-mondo-inghilterra.jpg"
-                        alt="">
+                    <a href="immagini/colazione-nel-mondo-inghilterra.jpg" data-fancybox="gallery"><img src="immagini/colazione-nel-mondo-inghilterra.jpg" alt=""></a>
                 </figure>
             </article>
         </div>
     </main>
-
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            infinite: false,
+            zoom: true,
+    });
+    </script>
 </body>
 
 </html>

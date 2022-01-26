@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="css/prova.css">
     <title>Document</title>
+    <script>
+    function aggiungiClasse() {
+         var element = document.getElementById("mioID");
+        element.classList.toggle("box");
+}
+    </script>
 </head>
 <body>
-    <a href="index.html">Torna alla home</a>
+    <button onclick="aggiungiClasse()">Try it</button>
+
+    <div id="mioID">
+        <p>Un testo</p>
+    </div>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ani.css">
+</head>
+<body>
+    <a href="#" id="moreInfo">Mostra più informazioni</a>
+    <div>
+        <a href="#" id="boxTesto" class="hidden">Testo</a>
+    </div>
+    <script>
+        var moreInfo = document.getElementById("moreInfo");
+        var boxTesto = document.getElementById("boxTesto");
+
+        moreInfo.addEventListener("click", function(){
+           boxTesto.classList.toggle("animazione");
+           boxTesto.classList.toggle("hidden");
+        });
+   </script>
+</body>
+</html>
