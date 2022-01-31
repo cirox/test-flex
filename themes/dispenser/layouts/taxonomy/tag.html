@@ -1,0 +1,38 @@
+{{ define "main"}}
+<article>
+<h5>Si parla di: {{ .Title}} — <a href="/tags">Gli altri argomenti</a></h5>
+
+  {{ .Content }}
+  {{ range .Pages}}
+  <div class="post">
+    <div class="grid">
+      <div class="text">
+        <h1><a href="{{.Permalink}}">{{.Title}}</a></h1>
+      </div>
+      <div>
+          {{ .Content }}
+          {{ if .Params.featured_image }}
+          <figure>
+            <img src="{{ .Params.featured_image }}" alt="{{ .Params.caption_image }}">
+            <figcaption>{{ if .Params.caption_image }}<p>{{.Params.caption_image}}</p>{{ end }}</figcaption>
+          </figure>
+          {{ end }}
+        <ul class="tag">
+        <li class="data">{{ dateFormat "02/01/2006" .Date }}</li>
+          {{ range .Params.tags }}
+          <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+          {{ end }}
+        </ul>        
+        <ul class="tag">
+          {{ range .Params.numeri }}
+          <li><a href="{{ "/numeri/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+          {{ end }}
+        </ul>
+      </div>
+      <hr>
+  </div>
+
+</div>
+  {{end}}
+</article>
+{{end}}
