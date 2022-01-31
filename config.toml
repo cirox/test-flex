@@ -1,5 +1,0 @@
-baseURL = '/'
-languageCode = 'en-us'
-title = 'Prof. Ciro Esposito'
-theme = "dispenser"
-publishDir = "docs"

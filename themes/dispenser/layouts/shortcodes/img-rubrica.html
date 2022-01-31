@@ -1,5 +1,0 @@
-<div class="img">
-    <a href="{{.Get "url" }}">
-    <img loading="lazy" src="https://dispenser.b-cdn.net/{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }} />
-</a>
-</div>
